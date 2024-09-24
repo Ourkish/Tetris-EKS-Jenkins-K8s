@@ -93,7 +93,7 @@ pipeline {
         stage('Update Deployment file') {
             environment {
                 GIT_REPO_NAME = "Tetris-EKS-Jenkins-K8s"
-                GIT_USER_NAME = "haithem"
+                GIT_USER_NAME = "Ourkish"
             }
             steps {
                 dir('Manifest-file') {
