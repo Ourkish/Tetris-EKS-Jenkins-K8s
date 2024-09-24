@@ -82,7 +82,7 @@ pipeline {
         }
         stage("TRIVY Image Scan") {
             steps {
-                sh 'trivy image avian19/tetrisv1:${BUILD_NUMBER} > trivyimage.txt' 
+                sh 'trivy image ourkish/haithem-docker-repo:${BUILD_NUMBER} > trivyimage.txt' 
             }
         }
         stage('Checkout Code') {
